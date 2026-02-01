@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Profile - EventHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-calendar-star"></i>
+                    <span>EventHub</span>
+                </div>
+                <div class="nav-search">
+                    <input type="text" placeholder="Search for event organizers..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="location-selector">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="citySelect">
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Pune</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> > <a href="listing.html">Event Organizers</a> > <span id="organizerName">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="container">
+        <div class="profile-page">
+            <!-- Banner Image -->
+            <div class="profile-banner">
+                <img id="bannerImage" src="https://via.placeholder.com/1200x300" alt="Event Banner">
+            </div>
+
+            <!-- Organizer Info -->
+            <div class="organizer-info">
+                <div class="organizer-header">
+                    <div class="organizer-avatar">
+                        <img id="organizerLogo" src="https://via.placeholder.com/100x100" alt="Organizer Logo">
+                    </div>
+                    <div class="organizer-details">
+                        <h1 id="organizerName">Loading...</h1>
+                        <div class="organizer-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <span id="rating">4.5</span> (234 reviews)
+                            </span>
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="location">Mumbai, Maharashtra</span>
+                            </span>
+                            <span class="experience">
+                                <i class="fas fa-award"></i>
+                                <span id="experience">8+ Years Experience</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="organizer-actions">
+                        <button class="btn-primary" onclick="sendRequirement()">
+                            <i class="fas fa-envelope"></i> Send Requirement
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="profile-content">
+                <!-- Left Column -->
+                <div class="profile-left">
+                    <!-- About Section -->
+                    <section class="profile-section">
+                        <h2>About</h2>
+                        <p id="aboutText">We are a premier event organizing company specializing in creating memorable experiences for all types of occasions. With over 8 years of experience in the industry, we have successfully organized more than 500 events ranging from intimate birthday parties to grand wedding celebrations.</p>
+                    </section>
+
+                    <!-- Services Section -->
+                    <section class="profile-section">
+                        <h2>Services Offered</h2>
+                        <div class="services-list" id="servicesList">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </section>
+
+                    <!-- Pricing Section -->
+                    <section class="profile-section">
+                        <h2>Pricing</h2>
+                        <div class="pricing-info">
+                            <div class="price-range">
+                                <span class="price-label">Starting from:</span>
+                                <span class="price-value" id="startingPrice">₹25,000</span>
+                            </div>
+                            <p class="price-note">*Prices may vary based on event requirements and scale</p>
+                        </div>
+                    </section>
+
+                    <!-- Gallery Section -->
+                    <section class="profile-section">
+                        <h2>Gallery</h2>
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="profile-right">
+                    <!-- Contact Info -->
+                    <section class="profile-section contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span id="phoneNumber">+91 98765 43210</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span id="email">contact@organizer.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="address">123, Event Street, Mumbai - 400001</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quick Stats -->
+                    <section class="profile-section stats-card">
+                        <h3>Quick Stats</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" id="eventsCompleted">500+</div>
+                                <div class="stat-label">Events Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="clientsServed">1000+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="teamSize">25+</div>
+                                <div class="stat-label">Team Members</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Reviews Summary -->
+                    <section class="profile-section reviews-card">
+                        <h3>Reviews Summary</h3>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span>5 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 70%"></div>
+                                </div>
+                                <span>70%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 20%"></div>
+                                </div>
+                                <span>20%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 7%"></div>
+                                </div>
+                                <span>7%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 2%"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 Star</span>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 1%"></div>
+                                </div>
+                                <span>1%</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EventHub</h3>
+                    <p>Your trusted platform for finding the best event organizers</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Cities</h4>
+                    <ul>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EventHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

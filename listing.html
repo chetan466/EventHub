@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizers - EventHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-calendar-star"></i>
+                    <span>EventHub</span>
+                </div>
+                <div class="nav-search">
+                    <input type="text" placeholder="Search for event organizers..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="location-selector">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="citySelect">
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Pune</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> > <span id="currentCategory">Event Organizers</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="listing-page">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <h3>Filters</h3>
+                
+                <div class="filter-section">
+                    <h4>Event Type</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="eventType" value="wedding"> Wedding</label>
+                        <label><input type="checkbox" name="eventType" value="birthday"> Birthday</label>
+                        <label><input type="checkbox" name="eventType" value="corporate"> Corporate</label>
+                        <label><input type="checkbox" name="eventType" value="party"> Party</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Budget Range</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="budget" value="0-25000"> Under ₹25,000</label>
+                        <label><input type="checkbox" name="budget" value="25000-50000"> ₹25,000 - ₹50,000</label>
+                        <label><input type="checkbox" name="budget" value="50000-100000"> ₹50,000 - ₹1,00,000</label>
+                        <label><input type="checkbox" name="budget" value="100000+"> Above ₹1,00,000</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Rating</h4>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="rating" value="4"> 4+ Stars</label>
+                        <label><input type="checkbox" name="rating" value="3"> 3+ Stars</label>
+                        <label><input type="checkbox" name="rating" value="2"> 2+ Stars</label>
+                    </div>
+                </div>
+
+                <button class="apply-filters-btn" onclick="applyFilters()">Apply Filters</button>
+            </aside>
+
+            <!-- Listings -->
+            <main class="listings-main">
+                <div class="listings-header">
+                    <h2 id="listingTitle">Event Organizers</h2>
+                    <div class="results-count">
+                        <span id="resultsCount">Showing 1-12 of 156 results</span>
+                    </div>
+                    <div class="sort-options">
+                        <select id="sortBy" onchange="sortListings()">
+                            <option value="relevance">Sort by Relevance</option>
+                            <option value="rating">Sort by Rating</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="organizers-grid" id="organizersGrid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn" onclick="changePage('prev')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">...</button>
+                    <button class="page-btn">13</button>
+                    <button class="page-btn" onclick="changePage('next')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EventHub</h3>
+                    <p>Your trusted platform for finding the best event organizers</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Cities</h4>
+                    <ul>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EventHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
