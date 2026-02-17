@@ -124,6 +124,6 @@ Each organizer includes:
 
 This project is open source and available under the MIT License.
 
----
+
 
 **EventHub** - Your trusted platform for finding the perfect event organizer! 🎉
