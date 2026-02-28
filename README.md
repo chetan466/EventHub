@@ -85,7 +85,7 @@ EventHub/
 - Realistic pricing and rating information
 - Comprehensive service listings
 
-## 🌟 Interactive Features
+##  Interactive Features
 
 - **Hover Effects**: Smooth transitions on cards and buttons
 - **Click Feedback**: Visual feedback on button interactions
@@ -93,7 +93,7 @@ EventHub/
 - **Smooth Scrolling**: Anchor link navigation
 - **Loading States**: Visual feedback during data loading
 
-## 📊 Dummy Data
+##  Dummy Data
 
 The application includes realistic dummy data for:
 - Wedding Planners
