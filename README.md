@@ -2,7 +2,7 @@
 
 A modern, responsive frontend web application inspired by Justdial.com for discovering and connecting with event organizers.
 
-## 🎯 Features
+##  Features
 
 ### Home Page
 - **Navigation Bar**: Logo, search bar, and city/location selector
@@ -30,14 +30,14 @@ A modern, responsive frontend web application inspired by Justdial.com for disco
 - **JavaScript**: Interactive functionality and dynamic content
 - **Font Awesome**: Icon library for better visual appeal
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The application is fully responsive and works seamlessly across:
 - Desktop (1200px+)
 - Tablet (768px - 1199px)
 - Mobile (320px - 767px)
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone or download the project files
 2. Navigate to the project directory
@@ -45,7 +45,7 @@ The application is fully responsive and works seamlessly across:
 
 No build process or server setup required - it's a pure frontend application!
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 EventHub/
@@ -59,7 +59,7 @@ EventHub/
 └── README.md          # This file
 ```
 
-## 🎨 Design Features
+##  Design Features
 
 - **Modern UI**: Clean, professional marketplace-style interface
 - **Search-First Experience**: Prominent search functionality
