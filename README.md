@@ -6,7 +6,7 @@ A modern, responsive frontend web application inspired by Justdial.com for disco
 
 ### Home Page
 - **Navigation Bar**: Logo, search bar, and city/location selector
-- **Hero Section**: Large search interface with event type and location filters
+- **Hero Section**: Large search interface with event type and location filter
 - **Category Grid**: Visual categories for Wedding Planners, Birthday Organizers, Catering, Decoration, Photography, and Music & DJ
 - **Featured Organizers**: Showcase of top-rated event organizerss
 
