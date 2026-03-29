@@ -104,7 +104,7 @@ The application includes realistic dummy data for:
 - Decoration Services
 
 Each organizer includes:
-- Contact information
+- Contact informatio
 - Service offerings
 - Pricing details
 - Customer ratings
