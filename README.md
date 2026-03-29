@@ -39,7 +39,7 @@ The application is fully responsive and works seamlessly across:
 
 ##  Getting Started
 
-1. Clone or download the project files
+1. Clone or download the project file
 2. Navigate to the project directory
 3. Open `index.html` in your web browser
 
