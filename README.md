@@ -96,7 +96,7 @@ EventHub/
 ##  Dummy Data
 
 The application includes realistic dummy data for:
-- Wedding Planners
+- Wedding Planner
 - Birthday Organizers
 - Corporate Event Managers
 - Party Organizers
