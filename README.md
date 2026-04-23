@@ -11,7 +11,7 @@ A modern, responsive frontend web application inspired by Justdial.com for disco
 - **Featured Organizers**: Showcase of top-rated event organizer
 
 ### Listing Page
-- **Card-based Layout**: Clean, modern organizer cards with essential information
+- **Card-based Layout**: Clean, modern organizer cards with essential informatio
 - **Advanced Filters**: Filter by event type, budget range, and ratings
 - **Sorting Options**: Sort by relevance, rating, or pric
 - **Pagination**: Easy navigation through multiple pages of result
