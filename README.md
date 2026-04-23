@@ -43,7 +43,7 @@ The application is fully responsive and works seamlessly across:
 2. Navigate to the project directory
 3. Open `index.html` in your web browser
 
-No build process or server setup required - it's a pure frontend application!
+No build process or server setup required - it's a pure frontend application
 
 ##  Project Structure
 
