@@ -2,7 +2,7 @@
 
 A modern, responsive frontend web application inspired by Justdial.com for discovering and connecting with event organizers.
 
-##  Feature
+##  Features
 
 ### Home Page
 - **Navigation Bar**: Logo, search bar, and city/location selectorr
