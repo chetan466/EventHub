@@ -17,7 +17,7 @@ A modern, responsive frontend web application inspired by Justdial.com for disco
 - **Pagination**: Easy navigation through multiple pages of result
 
 ### Organizer Profile Page
-- **Detailed Information*: Comprehensive organizer details and service
+- **Detailed Information*: Comprehensive organizer details and services
 - **Image Gallery**: Visual portfolio of past eventt
 - **Contact Information**: Easy ways to connect with organizerss
 - **Reviews & Ratings**: Social proof and quality indicatorss
