@@ -10,7 +10,7 @@ A modern, responsive frontend web application inspired by Justdial.com for disco
 - **Category Grid**: Visual categories for Wedding Planners, Birthday Organizers, Catering, Decoration, Photography, and Music & DJ
 - **Featured Organizers**: Showcase of top-rated event organizer
 
-### Listing Page
+### Listing Pa
 - **Card-based Layout**: Clean, modern organizer cards with essential informatio
 - **Advanced Filters**: Filter by event type, budget range, and rating
 - **Sorting Options**: Sort by relevance, rating, or pric
